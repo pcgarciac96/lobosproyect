@@ -6,5 +6,4 @@ export default interface IUser extends Document {
   email: string;
   descripton: string;
   password: string;
-  pockeID : any;     
 }

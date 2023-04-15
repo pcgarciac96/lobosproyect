@@ -47,27 +47,10 @@ async function getUser(req: Request, res: Response, next: NextFunction) {
     });
   }
 }
-async function addPokemon(req: Request, res: Response, next: NextFunction) {
-  try {
-    console.log(req.body.pokeID);
-    await Users.findOneAndUpdate(
-      {
-        _id: req.params._id,
-      },
-      {
-        $push: { pokeID: req.body.pokeID },
-      }
-    );
-    return res.status(200).json(responseMessage.addSuccess);
-  } catch (error) {
-    console.log(error);
-    return res.status(500).json(responseMessage.errorServer);
-  }
-}
+
 
 export default {
   login,
   addUser,
   getUser,
-  addPokemon,
 };
