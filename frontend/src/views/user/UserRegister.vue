@@ -77,24 +77,9 @@ export default {
       console.log(user);
       userRegister(user)
         .then((res) => {
-          console.log(res);
-          // saveToken(res.data.accessToken);
           router.push({ name: "Profile" });
         })
         .catch((error) => console.log(error));
-      //   const response = await apiNode.login({
-      //     email: email.value,
-      //     password: password.value,
-      //   });
-      //   console.log(response);
-      // //   if (response && response.status == "error") {
-      // //     console.log("hpña");
-      // //     if (response.type == 1) {
-      // //       console.log("hpña");
-      // //     } else if (response.type == 2) {
-      // //       console.log("hpña");
-      // //     }
-      // //   }
     };
     return { registerUser, email, password,name,lastname,phone };
   },

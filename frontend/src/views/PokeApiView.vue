@@ -69,7 +69,6 @@ export default {
       getPokemonList(value)
         .then((res) => {
           pokemons.value = res;
-          console.log(pokemons.value);
         })
         .catch((error) => console.log(error));
     };
