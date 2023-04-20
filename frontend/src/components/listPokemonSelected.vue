@@ -9,7 +9,7 @@
         >
           <div class="flex items-center">
             <div  v-if="store.pokemonList.length == 0">No hay elementos por mostrar</div>
-            <div v-else class="grid grid-cols-5 gap-4">
+            <div v-else class="grid md:grid-cols-5 grid-cols-3 gap-4">
               <div 
                 class="px-2 text-xs text-blue-500 bg-gray-100 rounded-full sm:px-4 sm:py-1 dark:bg-gray-700"
                 v-for="(item, i) in store.pokemonList"

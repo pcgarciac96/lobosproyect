@@ -25,7 +25,7 @@
               class="absolute rounded-full bg-transparent w-16 md:w-20 md:h-20 md:p-2 z-10 -top-2 md:-top-4 -left-12 md:-left-14 transition"
             >
               <div
-                class="rounded-full bg-black w-16 sm:w-18 md:w-20 overflow-auto"
+                class="rounded-full bg-black w-16 sm:w-18 md:w-20 md:mt-0 mt-1 overflow-auto"
               >
                 <img :src="pokemons.data.sprites.front_default" class="" />
               </div>
