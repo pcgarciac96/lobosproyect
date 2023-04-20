@@ -106,9 +106,8 @@
 </template>
 <script>
 import { ref } from "vue";
-import { userRegister } from "../services/userService";
-import router from "../router";
-// import { saveToken } from "../services/userAuthService.js";
+import { userRegister } from "../../services/userService";
+import router from "../../router";
 export default {
   setup() {
     const email = ref("");

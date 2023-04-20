@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import decode from "jwt-decode";
 import moment from "moment";
-import store from "../store/index"
+import store from "../storege/index"
 import { autoLogin } from "../helpers/StoreHelper.js";
 import { routes } from "./Routes";
 // const history = createWebHistory();
@@ -12,7 +12,7 @@ const router = createRouter({
 router.beforeEach(async (to, from, next) => {
   await autoLogin();
   if (to.path == "/") {
-    router.push({ path: "/login" });
+    router.push({ path: "/home" });
   }
   window.scrollTo(0, 0);
   if (to.matched.some((record) => record.meta.requiresAuth)) {

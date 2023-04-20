@@ -3,7 +3,7 @@
     <nav class="flex items-center">
       <img
         class="w-28 h-20"
-        src="../assets/img/55554432_355372845073908_4873990253993525248_n.png"
+        src="../../assets/img/55554432_355372845073908_4873990253993525248_n.png"
       />
       <div class="text-white text-xs hidden sm:block ml-2">
         <a
@@ -110,8 +110,8 @@
 </template>
 <script>
 import { onMounted, ref } from "vue";
-import { getUser } from "../services/userService";
-import store from "../store/index";
+import { getUser } from "../../services/userService";
+import store from "../../storege/index";
 
 export default {
   setup() {

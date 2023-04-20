@@ -1,4 +1,4 @@
-import store from "../store";
+import store from "../storege";
 
 async function useToken(token) {
   store.dispatch("saveToken", token);

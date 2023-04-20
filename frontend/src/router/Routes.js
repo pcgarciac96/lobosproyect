@@ -1,19 +1,24 @@
 export const routes = [
   {
-    path: "/",
-    name: "start",
-    meta: { requiresAuth: false },
+    path: "/home",
+    name: "home",
+    component: () => import("../views/HomeView.vue"),
+  },
+  {
+    path: "/pokeApi",
+    name: "pokeApi",
+    component: () => import("../views/PokeApiView.vue"),
   },
   {
     path: "/login",
     name: "Login",
-    component: () => import("../views/userLogin.vue"),
+    component: () => import("../views/user/UserLogin.vue"),
     meta: { requiresAuth: false },
   },
   {
     path: "/Profile",
     name: "Profile",
-    component: () => import("../views/userProfile.vue"),
+    component: () => import("../views/user/UserProfile.vue"),
     meta: {
       requiresAuth: true,
     },
@@ -21,7 +26,7 @@ export const routes = [
   {
     path: "/Register",
     name: "Register",
-    component: () => import("../views/userRegister.vue"),
+    component: () => import("../views/user/UserRegister.vue"),
     meta: {
       requiresAuth: false,
     },
