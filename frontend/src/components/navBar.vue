@@ -45,9 +45,7 @@ export default {
     let isOpen = ref(false);
     let links = [
       { name: "Inicio", link: "/home" },
-      { name: "PokeApi", link: "/pokeApi" },
-      { name: "algo", link: "" },
-      { name: "algo", link: "" },
+      { name: "PokeApi", link: "/pokeApi" }
     ];
 
     const menuOpen = () => {

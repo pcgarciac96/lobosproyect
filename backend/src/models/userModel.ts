@@ -8,7 +8,6 @@ const userSchema: Schema = new Schema(
     description: { type: String, trim: true },
     password: { type: String },
     email: { type: String, required: true },
-    pokeID: {type: Array, requried: false} 
   },
   {
     timestamps: {

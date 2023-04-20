@@ -33,15 +33,13 @@
 </template>
 
 <script>
-// import imageSlider from "../components/imageSlider";
 export default {
-  // components: { imageSlider },
   setup() {
     let links = [
-      { name: "algo", img: require("../assets/img/icons/rugby.png") },
-      { name: "algo", img: require("../assets/img/icons/rugby(1).png") },
+      { name: "text 1", img: require("../assets/img/icons/rugby.png") },
+      { name: "text 2", img: require("../assets/img/icons/rugby(1).png") },
       {
-        name: "algo",
+        name: "text 3",
         img: require("../assets/img/icons/jugador-de-rugby.png"),
       },
     ];
