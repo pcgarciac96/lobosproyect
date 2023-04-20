@@ -1,6 +1,6 @@
 <template>
   <div class="md:w-[584px] mx-auto flex w-[92%] items-center rounded-full border hover:shadow-md">
-    <input type="text" class="w-full bg-transparent rounded-full py-[14px] pl-4 outline-none" v-model="searchText" @input="updateSearchText"  />
+    <input type="text" class="w-full bg-transparent border-2 border-gray-700 rounded-full py-[14px] pl-4 outline-none" v-model="searchText" @input="updateSearchText"  />
   </div>
   
 </template>

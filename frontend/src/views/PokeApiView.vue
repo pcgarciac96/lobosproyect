@@ -15,7 +15,7 @@
     <div v-if="pokemons.length == 0">
       nada por mostrar, digite el id del pokemon que desea encontrar
     </div>
-    <div v-else class="bg-white py-10 p-5 items-center justify-center flex">
+    <div v-else class="bg-white  items-center justify-center flex">
       <div class="flex p-4 ml-5 md:p-10">
         <div class="w-full flex items-center justify-center bg-transparent">
           <div
@@ -40,7 +40,7 @@
                 @click="store.insertPokemon(pokemons.data.forms[0].name)"
                 class="absolute text-gray-200 text-sm mt-1 leading-relaxed left-8 sm:left-10"
               >
-                add
+                AGREGAR
               </button>
             </div>
           </div>
