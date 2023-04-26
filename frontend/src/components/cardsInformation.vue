@@ -13,7 +13,7 @@
           >
             <div class="px-4 py-5 flex-auto">
               <div
-                class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
+                class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400 animate-pulse"
                 :class="{ 'diferent-color': i === 1 }"
               >
                 <img :src="link.img" alt="" />
