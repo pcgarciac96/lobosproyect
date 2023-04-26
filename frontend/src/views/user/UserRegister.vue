@@ -76,8 +76,7 @@ export default {
       };
       console.log(user);
       userRegister(user)
-        .then((res) => {
-          console.log(res)
+        .then(() => {
           router.push({ name: "Profile" });
         })
         .catch((error) => console.log(error));
